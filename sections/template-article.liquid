@@ -1,4 +1,5 @@
-<h1>{{ article.title}} </h1>
+<h1>{{ article.title }}
+</h1>
 
 <small>{{ article.author }}</small>
 
@@ -7,3 +8,20 @@
 <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.image.alt }}">
 
 <div>{{ article.content }}</div>
+
+{% schema %}
+  {
+    "name": "Template Article",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_author",
+        "default": true,
+        "label": "Display Author Name"
+      }, {
+        "type": "checkbox",
+        "id": "enable_published_date"
+      }
+    ]
+  }
+{% endschema %}
