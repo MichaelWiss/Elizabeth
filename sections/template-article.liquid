@@ -1,9 +1,14 @@
 <h1>{{ article.title }}
 </h1>
 
-<small>{{ article.author }}</small>
+{% if sections.settings.enable_author %}
+  <small>{{ article.author }}</small>
+{% endif %}
 
-<time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%Y-%m-%d' }}</time>
+{% if section.settings.enable_published_date %}
+  <time datetime="{{ article.published_at | date: '%Y-%m-%d' }}">{{ article.published_at | date: '%Y-%m-%d' }}</time>
+{% endif %}
+
 
 <img src="{{ article.image | img_url: 'medium' }}" alt="{{ article.image.alt }}">
 
@@ -23,6 +28,25 @@
         "id": "enable_published_date",
         "default": true,
         "label": "Display Published Date"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "article_title",
+        "name": "Title",
+        "limit": 1
+      }, {
+        "type": "article_author",
+        "name": "Author",
+        "limit": 1
+      }, {
+        "type": "article_published_date",
+        "name": "Published Date",
+        "limit": 1
+      }, {
+        "type": "featured_image",
+        "name": "Thumbnail",
+        "limit": 1
       }
     ]
   }
