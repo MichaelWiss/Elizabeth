@@ -3,9 +3,6 @@
         "template": {
             "type": "template-article",
             "blocks": {
-                "thumbnail": {
-                    "type": "featured_image"
-                },
                 "title": {
                     "type": "article_title"
                 },
@@ -14,6 +11,9 @@
                 },
                 "published_date": {
                     "type": "article_published_date"
+                },
+                "thumbnail": {
+                    "type": "featured_image"
                 },
                 "content": {
                     "type": "article_content"
