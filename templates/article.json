@@ -3,8 +3,8 @@
     "template": {
       "type": "template-article",
       "blocks": {
-        "author": {
-          "type": "article_author",
+        "title": {
+          "type": "article_title",
           "settings": {
           }
         },
@@ -13,13 +13,13 @@
           "settings": {
           }
         },
-        "published_date": {
-          "type": "article_published_date",
+        "author": {
+          "type": "article_author",
           "settings": {
           }
         },
-        "title": {
-          "type": "article_title",
+        "published_date": {
+          "type": "article_published_date",
           "settings": {
           }
         },
@@ -30,8 +30,8 @@
         }
       },
       "block_order": [
-        "thumbnail",
         "title",
+        "thumbnail",
         "author",
         "published_date",
         "content"
