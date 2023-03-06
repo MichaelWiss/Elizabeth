@@ -3,6 +3,11 @@
     "template": {
       "type": "template-article",
       "blocks": {
+        "published_date": {
+          "type": "article_published_date",
+          "settings": {
+          }
+        },
         "author": {
           "type": "article_author",
           "settings": {
@@ -18,11 +23,6 @@
           "settings": {
           }
         },
-        "published_date": {
-          "type": "article_published_date",
-          "settings": {
-          }
-        },
         "content": {
           "type": "article_content",
           "settings": {
@@ -30,10 +30,10 @@
         }
       },
       "block_order": [
+        "published_date",
         "author",
         "thumbnail",
         "title",
-        "published_date",
         "content"
       ],
       "settings": {
