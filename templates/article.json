@@ -3,14 +3,8 @@
     "template": {
       "type": "template-article",
       "blocks": {
-        "thumbnail": {
-          "type": "featured_image",
-          "settings": {
-          }
-        },
         "title": {
           "type": "article_title",
-          "disabled": true,
           "settings": {
           }
         },
@@ -28,14 +22,19 @@
           "type": "article_content",
           "settings": {
           }
+        },
+        "thumbnail": {
+          "type": "featured_image",
+          "settings": {
+          }
         }
       },
       "block_order": [
-        "thumbnail",
         "title",
         "author",
         "published_date",
-        "content"
+        "content",
+        "thumbnail"
       ],
       "settings": {
         "enable_author": true,
