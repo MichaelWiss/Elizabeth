@@ -8,8 +8,8 @@
           "settings": {
           }
         },
-        "title": {
-          "type": "article_title",
+        "published_date": {
+          "type": "article_published_date",
           "settings": {
           }
         },
@@ -18,23 +18,23 @@
           "settings": {
           }
         },
-        "published_date": {
-          "type": "article_published_date",
+        "content": {
+          "type": "article_content",
           "settings": {
           }
         },
-        "content": {
-          "type": "article_content",
+        "title": {
+          "type": "article_title",
           "settings": {
           }
         }
       },
       "block_order": [
         "thumbnail",
-        "title",
-        "author",
         "published_date",
-        "content"
+        "author",
+        "content",
+        "title"
       ],
       "settings": {
         "enable_author": true,
