@@ -1,16 +1,15 @@
-
 {
   "sections": {
     "template": {
       "type": "template-article",
       "blocks": {
-        "title": {
-          "type": "article_title",
+        "thumbnail": {
+          "type": "featured_image",
           "settings": {
           }
         },
-        "thumbnail": {
-          "type": "featured_image",
+        "title": {
+          "type": "article_title",
           "settings": {
           }
         },
@@ -31,17 +30,19 @@
         }
       },
       "block_order": [
-        "title",
         "thumbnail",
+        "title",
         "author",
         "published_date",
         "content"
       ],
       "settings": {
-        "enable_published_date": true,
-        "enable_author": true
+        "enable_author": true,
+        "enable_published_date": true
       }
+    }
   },
-  "order": ["template"]
+  "order": [
+    "template"
+  ]
 }
-
