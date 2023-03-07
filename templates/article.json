@@ -8,13 +8,14 @@
           "settings": {
           }
         },
-        "author": {
-          "type": "article_author",
+        "title": {
+          "type": "article_title",
+          "disabled": true,
           "settings": {
           }
         },
-        "title": {
-          "type": "article_title",
+        "author": {
+          "type": "article_author",
           "settings": {
           }
         },
@@ -31,8 +32,8 @@
       },
       "block_order": [
         "thumbnail",
-        "author",
         "title",
+        "author",
         "published_date",
         "content"
       ],
