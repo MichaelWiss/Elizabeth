@@ -15,7 +15,6 @@
         },
         "published_date": {
           "type": "article_published_date",
-          "disabled": true,
           "settings": {
           }
         },
