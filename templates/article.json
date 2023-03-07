@@ -10,7 +10,6 @@
         },
         "title": {
           "type": "article_title",
-          "disabled": true,
           "settings": {
           }
         },
