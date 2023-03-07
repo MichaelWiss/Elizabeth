@@ -1,7 +1,7 @@
 <article class="py-8">
   {% for block in section.blocks %}
     {% case block.type %}
-      {% when 'article.title' %}
+      {% when 'article_title' %}
       <div class="flex items-center justify-center">
         <div class="max-w-7xl text-center">
           <a href=" {{ blog.url }}" class="text-base uppercase text-gray-500 hover:text-gray-900 font-bold">{{ blog.title }}</a>
